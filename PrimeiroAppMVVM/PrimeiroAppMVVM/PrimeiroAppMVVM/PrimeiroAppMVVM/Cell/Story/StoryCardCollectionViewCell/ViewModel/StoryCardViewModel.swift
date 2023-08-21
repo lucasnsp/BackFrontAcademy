@@ -19,7 +19,7 @@ class StoryCardViewModel {
         listStory.count
     }
     
-    func loadCurrentStory(indexPath: IndexPath) -> Storys {
+    public func loadCurrentStory(indexPath: IndexPath) -> Storys {
         listStory[indexPath.row]
     }
 }

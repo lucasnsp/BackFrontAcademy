@@ -21,6 +21,7 @@ class PostCardCollectionViewCellScreen: UIView {
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.showsVerticalScrollIndicator = false
         //TO DO: REGISTER
+        cv.register(PostCollectionViewCell.self, forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
         cv.backgroundColor = .clear
         return cv
     }()
@@ -28,7 +29,6 @@ class PostCardCollectionViewCellScreen: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addElements()
-        configConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -39,10 +39,5 @@ class PostCardCollectionViewCellScreen: UIView {
         addSubview(collectionView)
         collectionView.pin(to: self)
     }
-    
-    private func configConstraints() {
-        NSLayoutConstraint.activate([
-        
-        ])
-    }
+
 }

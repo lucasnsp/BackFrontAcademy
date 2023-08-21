@@ -16,6 +16,10 @@
 		46CDC4432A90D9BA0069C6AF /* StoryCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDC4422A90D9BA0069C6AF /* StoryCollectionViewCellScreen.swift */; };
 		46CDC4482A90FFFC0069C6AF /* PostCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDC4472A90FFFC0069C6AF /* PostCardCollectionViewCell.swift */; };
 		46CDC44B2A91007E0069C6AF /* PostCardCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDC44A2A91007E0069C6AF /* PostCardCollectionViewCellScreen.swift */; };
+		46CDC44D2A93A68B0069C6AF /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDC44C2A93A68B0069C6AF /* Posts.swift */; };
+		46CDC4502A93ACC50069C6AF /* PostCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDC44F2A93ACC50069C6AF /* PostCardViewModel.swift */; };
+		46CDC4532A93B13F0069C6AF /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDC4522A93B13F0069C6AF /* PostCollectionViewCell.swift */; };
+		46CDC4562A93B20B0069C6AF /* PostCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDC4552A93B20B0069C6AF /* PostCollectionViewCellScreen.swift */; };
 		46E0D4C92A8E541200494BD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0D4C82A8E541200494BD5 /* AppDelegate.swift */; };
 		46E0D4CB2A8E541200494BD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0D4CA2A8E541200494BD5 /* SceneDelegate.swift */; };
 		46E0D4CD2A8E541200494BD5 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0D4CC2A8E541200494BD5 /* HomeVC.swift */; };
@@ -36,6 +40,10 @@
 		46CDC4422A90D9BA0069C6AF /* StoryCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		46CDC4472A90FFFC0069C6AF /* PostCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		46CDC44A2A91007E0069C6AF /* PostCardCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardCollectionViewCellScreen.swift; sourceTree = "<group>"; };
+		46CDC44C2A93A68B0069C6AF /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		46CDC44F2A93ACC50069C6AF /* PostCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardViewModel.swift; sourceTree = "<group>"; };
+		46CDC4522A93B13F0069C6AF /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		46CDC4552A93B20B0069C6AF /* PostCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		46E0D4C52A8E541200494BD5 /* PrimeiroAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeiroAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E0D4C82A8E541200494BD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46E0D4CA2A8E541200494BD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				46CDC43C2A8FA9310069C6AF /* Storys.swift */,
+				46CDC44C2A93A68B0069C6AF /* Posts.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +164,7 @@
 		46CDC4452A90FFB30069C6AF /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				46CDC4512A93B1110069C6AF /* PostCollectionViewCell */,
 				46CDC4462A90FFCC0069C6AF /* PostCardCollectionViewCell */,
 			);
 			path = Post;
@@ -164,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				46CDC4472A90FFFC0069C6AF /* PostCardCollectionViewCell.swift */,
+				46CDC44E2A93AC9D0069C6AF /* ViewModel */,
 				46CDC4492A9100590069C6AF /* Screen */,
 			);
 			path = PostCardCollectionViewCell;
@@ -173,6 +184,31 @@
 			isa = PBXGroup;
 			children = (
 				46CDC44A2A91007E0069C6AF /* PostCardCollectionViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		46CDC44E2A93AC9D0069C6AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				46CDC44F2A93ACC50069C6AF /* PostCardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		46CDC4512A93B1110069C6AF /* PostCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				46CDC4522A93B13F0069C6AF /* PostCollectionViewCell.swift */,
+				46CDC4542A93B17E0069C6AF /* Screen */,
+			);
+			path = PostCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		46CDC4542A93B17E0069C6AF /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				46CDC4552A93B20B0069C6AF /* PostCollectionViewCellScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -299,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E0D4DE2A8E56E200494BD5 /* HomeScreen.swift in Sources */,
+				46CDC4562A93B20B0069C6AF /* PostCollectionViewCellScreen.swift in Sources */,
 				46CDC4432A90D9BA0069C6AF /* StoryCollectionViewCellScreen.swift in Sources */,
 				46CDC4482A90FFFC0069C6AF /* PostCardCollectionViewCell.swift in Sources */,
 				46E0D4CD2A8E541200494BD5 /* HomeVC.swift in Sources */,
@@ -306,6 +343,8 @@
 				46CDC42D2A8F90330069C6AF /* HomeViewModel.swift in Sources */,
 				46CDC4402A90D8D20069C6AF /* StoryCollectionViewCell.swift in Sources */,
 				46CDC43A2A8FA6AC0069C6AF /* StoryCardViewModel.swift in Sources */,
+				46CDC4532A93B13F0069C6AF /* PostCollectionViewCell.swift in Sources */,
+				46CDC4502A93ACC50069C6AF /* PostCardViewModel.swift in Sources */,
 				46CDC44B2A91007E0069C6AF /* PostCardCollectionViewCellScreen.swift in Sources */,
 				46CDC43D2A8FA9310069C6AF /* Storys.swift in Sources */,
 				46E0D4C92A8E541200494BD5 /* AppDelegate.swift in Sources */,
@@ -313,6 +352,7 @@
 				46E0D4E12A8E5C4600494BD5 /* UIView + Extension.swift in Sources */,
 				46E0D4CB2A8E541200494BD5 /* SceneDelegate.swift in Sources */,
 				46CDC4342A8F96840069C6AF /* StoryCardCollectionViewCellScreen.swift in Sources */,
+				46CDC44D2A93A68B0069C6AF /* Posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
