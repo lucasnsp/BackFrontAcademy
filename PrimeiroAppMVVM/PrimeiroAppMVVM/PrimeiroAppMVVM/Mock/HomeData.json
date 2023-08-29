@@ -1,0 +1,55 @@
+{
+    "stories": [
+        {
+            "userName": "Add Story",
+            "image": "img1"
+        },
+        {
+            "userName": "Felipe",
+            "image": "img2"
+        },
+        {
+            "userName": "Carolina",
+            "image": "img3"
+        },
+        {
+            "userName": "Samuel",
+            "image": "img4"
+        },
+        {
+            "userName": "Ariana",
+            "image": "img5"
+        },
+        {
+            "userName": "Puggy_101",
+            "image": "img6"
+        },
+        {
+            "userName": "Charles",
+            "image": "img7"
+        }
+    ],
+    "posts": [
+        {
+            "userName": "Jack",
+            "profileImage": "img2",
+            "postImage": "post1"
+        },
+        {
+            "userName": "Felipe",
+            "profileImage": "img4",
+            "postImage": "post2"
+        },
+        {
+            "userName": "Carolina",
+            "profileImage": "img3",
+            "postImage": "post3"
+        },
+        {
+            "userName": "Puggy_101",
+            "profileImage": "img6",
+            "postImage": "post4"
+        }
+    ]
+}
+
