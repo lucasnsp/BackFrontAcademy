@@ -44,7 +44,7 @@ class HomeViewModel {
     }
     
     public func fetchAllRequest() {
-        service.getHomeDataAlamofire { homeData, error in
+        service.getHomeDataURLSession { homeData, error in
             if error == nil {
                 self.posts = homeData?.posts ?? []
                 self.story = homeData?.stories ?? []
