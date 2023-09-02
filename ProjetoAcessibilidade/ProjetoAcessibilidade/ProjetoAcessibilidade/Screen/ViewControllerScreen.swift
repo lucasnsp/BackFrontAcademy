@@ -81,6 +81,13 @@ class ViewControllerScreen: UIView {
         delegate?.tappedLoginButton()
     }
     
+    lazy var personImageView: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.image = UIImage(systemName: "person")
+        return image
+    }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -102,6 +109,7 @@ class ViewControllerScreen: UIView {
         addSubview(positionFourLabel)
         addSubview(positionFiveLabel)
         addSubview(loginButton)
+        addSubview(personImageView)
     }
     
     private func configConstraints() {
@@ -126,6 +134,11 @@ class ViewControllerScreen: UIView {
             
             loginButton.topAnchor.constraint(equalTo: positionTwoLabel.bottomAnchor, constant: 20),
             loginButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            
+            personImageView.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 20),
+            personImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            personImageView.heightAnchor.constraint(equalToConstant: 120),
+            personImageView.widthAnchor.constraint(equalToConstant: 120),
         ])
     }
     
